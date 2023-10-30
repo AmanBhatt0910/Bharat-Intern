@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Temperature Converter</title>
+    <style>
+        body {
+            background-image: url('https://th.bing.com/th/id/OIP.ewRfMU-58Iustx-NiDinuAHaEo?pid=ImgDet&rs=1');
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 36px;
+        }
+
+        .container {
+            width: 75%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        input[type="number"] {
+            width: 95%;
+            padding: 10px;
+            margin: 10px 0;
+            font-size: 16px;
+        }
+
+        label {
+            display: block;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #result {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 60px; /* Height of the footer */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Temperature Converter</h1>
+    </header>
+
+    <div class="container">
+        <label for="celsius">Celsius: </label>
+        <input type="number" id="celsius" placeholder="Enter temperature in Celsius">
+
+        <label for="fahrenheit">Fahrenheit: </label>
+        <input type="number" id="fahrenheit" placeholder="Enter temperature in Fahrenheit">
+
+        <button>Convert</button>
+
+        <p id="result" style="display: none;"></p>
+    </div>
+
+    <footer>
+        &copy;Temperature Converter
+    </footer>
+</body>
+</html>
